@@ -1,5 +1,14 @@
+html {
+    height: 100%;
+}
+
 body {
+    height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
     font-family: 'Major Mono Display', monospace;
+    background-image: linear-gradient(to bottom right,yellow, black);
 }
 
 header {
@@ -13,6 +22,19 @@ iframe {
 
 .game {
     padding-top: 10px;
+}
+
+a:link, a:visited {
+    background-color: black;
+    color: yellow;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover, a:active {
+    background-color: #012345;
 }
 
 footer {
