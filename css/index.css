@@ -1,0 +1,21 @@
+body {
+    font-family: 'Major Mono Display', monospace;
+}
+
+header {
+    font-size: 60px;
+    padding: 20px;
+}
+
+iframe {
+    border-radius: 5px;
+}
+
+.game {
+    padding-top: 10px;
+}
+
+footer {
+    font-size: 24px;
+    padding: 20px;
+}
