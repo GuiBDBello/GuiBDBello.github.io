@@ -4,26 +4,49 @@ html {
 
 body {
     height: 100%;
-    background-repeat: no-repeat;
+    background-image: url('../img/bg.png');
+    background-size: cover;
     background-attachment: fixed;
-
+    background-repeat: no-repeat;
     font-family: 'Major Mono Display', monospace;
-    background-image: linear-gradient(to bottom right,yellow, black);
+}
+
+main {
+    padding-top: 140px;
 }
 
 header {
+    background-color: #f0f000;
+    border-bottom: 1px solid #000;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 120px;
     font-size: 60px;
-    padding: 20px;
+    text-align: center;
+    line-height: 120px;
 }
 
 iframe {
     border-radius: 5px;
 }
 
-.game {
-    padding-top: 10px;
+.games {
+    height:100%;
+    margin: 0px auto;
 }
 
+.game {
+    padding: 5px 5px 0px 5px;
+}
+/*
+.game:nth-child(even) {
+    float: left;
+}
+.game:nth-child(odd) {
+    float: right;
+}
+*/
 a:link, a:visited {
     background-color: black;
     color: yellow;
@@ -40,4 +63,5 @@ a:hover, a:active {
 footer {
     font-size: 24px;
     padding: 20px;
+    text-align: center;
 }
