@@ -4,20 +4,21 @@ html {
 
 body {
     height: 100%;
-    background-image: url('../img/bg.png');
+    /* background-image: url('../img/bg.png'); */
+    background-color: #000000;
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
     font-family: 'Major Mono Display', monospace;
-}
-
-main {
-    padding-top: 140px;
+    font-size: 24px;
 }
 
 header {
-    background-color: #f0f000;
-    border-bottom: 1px solid #000;
+    /* background-color: #112233; */
+    background-color: #000000;
+    opacity: 0.8;
+    border-bottom: 1px solid #ffffff;
+    color: #ffffff;
     position: fixed;
     top: 0;
     width: 100%;
@@ -25,6 +26,48 @@ header {
     font-size: 60px;
     text-align: center;
     line-height: 120px;
+}
+
+section.full-screen {
+    height:100%;
+}
+
+img {
+    min-height: 360px;
+    min-width: 480px;
+    max-height: 100%;
+    max-width: 80%;
+    border: 15px double #cdcdcd;
+}
+
+p {
+    border: 5px solid #cdcdcd;
+}
+
+.half-screen {
+    display: block;
+    width: 50%;
+    height: 100%;
+    margin: auto;
+    padding: 0px;
+    text-align: center;
+}
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.clearfix {
+    overflow: auto;
 }
 
 iframe {
@@ -37,19 +80,26 @@ iframe {
 }
 
 .game {
-    padding: 5px 5px 0px 5px;
+    height: 100%;
+    /* padding: 5px 5px 0px 5px; */
 }
-/*
-.game:nth-child(even) {
-    float: left;
+
+.game-image {
+    /* background-color: #112233; */
 }
-.game:nth-child(odd) {
-    float: right;
+
+.game-description {
+    /* background-color: #112233; */
+    color: #ffffff;
 }
-*/
+.game-description > p {
+    background-color: #000000;
+    padding: 300px;
+}
+
 a:link, a:visited {
     background-color: black;
-    color: yellow;
+    color: #ffffff;
     padding: 14px 25px;
     text-align: center;
     text-decoration: none;
@@ -57,11 +107,20 @@ a:link, a:visited {
 }
 
 a:hover, a:active {
-    background-color: #012345;
+    background-color: #555555;
 }
 
 footer {
     font-size: 24px;
     padding: 20px;
+    text-align: center;
+    
+    background-color: #000000;
+    opacity: 0.8;
+    border-top: 1px solid #ffffff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
     text-align: center;
 }
