@@ -1,9 +1,6 @@
 :root {
-    --main-bg: linear-gradient(127deg, rgba(25, 25, 25, .8), rgba(0, 255, 0, 0) 70.71%),
-                linear-gradient(217deg, rgba(50, 50, 50, .8), rgba(255, 0, 0, 0) 70.71%),
-                linear-gradient(336deg, rgba(75, 75, 75, .8), rgba(0, 0, 255, 0) 70.71%);
     --main-bg-image: linear-gradient(135deg, #252525, black, #525252);
-    --main-bg-color: #000;
+    --main-bg-color: #001;
     --secondary-bg-color: #000;
     --main-txt-color: #ffdf00;
     --secondary-txt-color: #c0c0c0;
@@ -19,7 +16,6 @@ html {
 body {
     height: 100%;
     background: var(--main-bg);
-    /*background-image: var(--main-bg-image);*/
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -29,20 +25,27 @@ body {
     font-size: 24px;
 }
 
-header > h1 {
-    position: fixed;
-    top: 0;
+header > h1, footer {
     width: 100%;
-    height: 80px;
-
+    
+    position: fixed;
+    
     background: var(--main-bg);
     background-color: var(--main-bg-color);
     opacity: 0.8;
+    
+    text-align: center;
+}
+
+header > h1 {
+    top: 0;
+
+    height: 80px;
+
     border-bottom: 1px solid var(--main-border-color);
     color: var(--main-txt-color);
     
     font-size: 48px;
-    text-align: center;
     line-height: 80px;
 }
 
@@ -52,39 +55,42 @@ h2 {
 }
 
 a {
+    width: 100%;
     max-width: 80%;
+    border: 1px solid var(--main-bg-color);
 }
 
 a > img {
     width: 100%;
     height: auto;
-    border: 15px double var(--secondary-border-color);
-    border-radius: 10px;
+    border: 2px solid var(--secondary-border-color);
+    border-radius: 5px;
 }
 
 footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
     height: 50px;
-
-    background: var(--main-bg);
-    background-color: var(--main-bg-color);
-    opacity: 0.8;
+    bottom: 0;
     border-top: 1px solid var(--main-border-color);
-
     font-size: 20px;
-    text-align: center;
+}
+
+footer > a {
+    width: auto;
 }
 
 section.full-screen {
-    height:100%;
+    height: 100%;
     box-shadow: inset 0 0 2px var(--main-border-color);
 }
 
-/* p {
-    border: 5px solid var(--secondary-border-color);
-} */
+.left {
+    float: left;
+    clear: left;
+}
+.right {
+    float: right;
+    clear: right;
+}
 
 .half-screen {
     display: block;
@@ -92,17 +98,6 @@ section.full-screen {
     height: 100%;
     margin: auto;
     padding: 0px;
-}
-
-/* .half-screen:nth-child(even) {
-    background-color: var(--secondary-bg-color);
-} */
-
-.left {
-    float: left;
-}
-.right {
-    float: right;
 }
 
 .center {
@@ -113,33 +108,14 @@ section.full-screen {
     height: 100%;
 }
 
-.game {
-    height: 100%;
-}
-
 .game-image a:hover {
     background-color: var(--main-bg-color);
 }
 
-.game-description {
-    color: var(--secondary-txt-color);
-}
-
-a > h2 {
-    color: var(--secondary-txt-color);
-    width: 100%;
-}
-
-.game-description > h2 {
-    float: none;
-    display: block;
-    padding: 20px;
-}
-
-.game-description > p {
-    float: none;
-    display: block;
+h2, p {
     width: 80%;
+    color: var(--secondary-txt-color);
+    display: block;
     text-align: center;
     padding: 20px;
 }
@@ -175,6 +151,28 @@ footer a:hover, footer a:active {
 @media only screen and (min-width: 768px) {
     a > img {
         /*min-height: 360px;*/
+    }
+}
+
+/* 900px e menos */
+@media only screen and (max-width: 900px) {
+    .half-screen {
+        display: inline-block;
+        width: 100%;
+        height: auto;
+    }
+    .left {
+        float: none;
+    }
+    .right {
+        float: none;
+    }
+    h2, p {
+        margin: auto;
+    }
+    a {
+        max-width: 100%;
+        margin: auto;
     }
 }
 
