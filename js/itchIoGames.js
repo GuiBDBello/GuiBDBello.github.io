@@ -250,8 +250,9 @@ myGames.games.sort((theyest, thou) => {
         return 0;
 }).forEach(game => {
     // Create Elements
-    let main = document.getElementsByTagName('main')[0];
-    let section = document.createElement('section');
+    let section = document.getElementById('game-jam-section');
+
+    let divGame = document.createElement('div');
 
     let divDescription = document.createElement('div');
     let aName = document.createElement('a');
@@ -260,6 +261,11 @@ myGames.games.sort((theyest, thou) => {
     let divImage = document.createElement('div');
     let aImg = document.createElement('a');
     let img = document.createElement('img');
+
+    // Add Classes
+    divGame.classList.add('game');
+    divDescription.classList.add('game-description');
+    divImage.classList.add('game-image');
 
     // Add Content
     aName.href = game.url;
@@ -277,11 +283,11 @@ myGames.games.sort((theyest, thou) => {
     divDescription.appendChild(aName);
     divDescription.appendChild(pDescription);
     divImage.appendChild(aImg);
+    
+    divGame.appendChild(divDescription);
+    divGame.appendChild(divImage);
 
-    section.appendChild(divDescription);
-    section.appendChild(divImage);
-
-    main.appendChild(section);
+    section.appendChild(divGame);
 
     i++;
 });
