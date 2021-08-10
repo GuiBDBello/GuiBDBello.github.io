@@ -250,44 +250,21 @@ myGames.games.sort((theyest, thou) => {
         return 0;
 }).forEach(game => {
     // Create Elements
-    let body = document.getElementsByTagName('body')[0];
+    let main = document.getElementsByTagName('main')[0];
     let section = document.createElement('section');
 
     let divDescription = document.createElement('div');
     let aName = document.createElement('a');
-    let h2Name = document.createElement('h2');
     let pDescription = document.createElement('p');
 
     let divImage = document.createElement('div');
     let aImg = document.createElement('a');
     let img = document.createElement('img');
-    
-    // Add Classes
-    section.classList.add('full-screen');
-    
-    divDescription.classList.add('half-screen', 'center', 'game-description');
-    if (i % 2 == 0) {
-        divDescription.classList.add('right');
-        divDescription.classList.remove('left');
-    } else {
-        divDescription.classList.add('left');
-        divDescription.classList.remove('right');
-    }
-
-    divImage.classList.add('half-screen', 'center', 'game-image');
-    if (i % 2 != 0) {
-        divImage.classList.add('right');
-        divImage.classList.remove('left');
-    } else {
-        divImage.classList.add('left');
-        divImage.classList.remove('right');
-    }
 
     // Add Content
     aName.href = game.url;
     aName.target = '_blank';
-    
-    h2Name.textContent = game.title;
+    aName.textContent = game.title;
     pDescription.textContent = game.short_text;
 
     aImg.href = game.url;
@@ -295,7 +272,6 @@ myGames.games.sort((theyest, thou) => {
     img.src = game.cover_url;
 
     // Append Childs
-    aName.appendChild(h2Name);
     aImg.appendChild(img);
 
     divDescription.appendChild(aName);
@@ -305,7 +281,7 @@ myGames.games.sort((theyest, thou) => {
     section.appendChild(divDescription);
     section.appendChild(divImage);
 
-    body.appendChild(section);
+    main.appendChild(section);
 
     i++;
 });
