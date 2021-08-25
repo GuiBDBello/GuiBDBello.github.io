@@ -13,7 +13,7 @@ body {
     height: 100%;
     background-color: var(--bg-color);
     color: var(--secondary-color);
-    font-family: 'Major Mono Display', monospace;
+    font-family: 'Coda', cursive;
     font-size: 24px;
 }
 
@@ -23,6 +23,7 @@ header {
     background-color: var(--bg-color);
     border-bottom: 1px solid var(--main-color);
     color: var(--main-color);
+    font-family: 'Major Mono Display', monospace;
     font-size: 48px;
     text-align: center;
     padding: 10px 0;
@@ -101,11 +102,19 @@ h2 {
 
 a {
     font-size: 28px;
+    font-weight: bold;
 }
 
 p {
     font-size: 24px;
     padding: 20px;
+}
+
+ul {
+    list-style-type: square;
+    text-align: justify;
+    text-justify: inter-word;
+    padding: 0 2em;
 }
 
 div > h2 p {
@@ -132,6 +141,7 @@ footer {
     bottom: 0;
     background-color: var(--bg-color);
     border-top: 1px solid var(--main-color);
+    font-family: 'Major Mono Display', monospace;
     text-align: center;
     padding: 10px 0;
     opacity: 0.8;
@@ -171,6 +181,9 @@ footer > a {
     }
     p {
         font-size: 16px;
+    }
+    ul {
+        font-size: 14px;
     }
     a, img {
         display: block;
