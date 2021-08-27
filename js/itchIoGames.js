@@ -267,6 +267,10 @@ myGames.games.sort((theyest, thou) => {
     divDescription.classList.add('game-description');
     divImage.classList.add('game-image');
 
+    // Add Animation
+    divGame.setAttribute("data-aos", "zoom-in-up");
+    divGame.setAttribute("data-aos-anchor-placement", "center-bottom");
+
     // Add Content
     aName.href = game.url;
     aName.target = '_blank';
@@ -276,6 +280,11 @@ myGames.games.sort((theyest, thou) => {
     aImg.href = game.url;
     aImg.target = '_blank';
     img.src = game.cover_url;
+
+    // Add Tilt
+    img.setAttributeNode(document.createAttribute("data-tilt"));
+    img.setAttribute("data-tilt-reverse", "true");
+    img.setAttribute("data-tilt-scale", "1.1");
 
     // Append Childs
     aImg.appendChild(img);

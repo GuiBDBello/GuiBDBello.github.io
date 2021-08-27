@@ -11,12 +11,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Coda&display=swap" rel="stylesheet">
 
+    <!-- Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     <!-- Styles -->
     <link rel="stylesheet" type="text/css" href="./css/reset.css">
     <link rel="stylesheet" type="text/css" href="./css/index.css">
 
     <!-- Logo -->
     <link rel="icon" type="image/png" href="./img/favicon.png">
+
+    <!-- Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
     <header>
@@ -26,7 +33,9 @@
     <main>
         <section class="full-screen">
             <div>
-                <h2>Hi, I'm Guilherme</h2>
+                <h2 data-tilt data-tilt-reverse="true" data-tilt-scale="1.2">
+                    Hi, I'm Guilherme
+                </h2>
                 <p>A Software and Game Developer.</p>
                 <!--
                 <p>
@@ -35,6 +44,14 @@
                     <a href="" target="_blank">Game Jams</a>
                 </p>
                 -->
+
+                <!-- This element is very important -->
+                <p class="empty"></p>
+                <!-- JK it's a gambiarra -->
+
+                <span class="material-icons animation-target">
+                    keyboard_double_arrow_down
+                </span>
             </div>
         </section>
 
@@ -68,7 +85,6 @@
         <!-- This element is very important -->
         <p class="empty"></p>
         <!-- JK it's a gambiarra -->
-
     </main>
 
     <footer>
@@ -77,5 +93,12 @@
         <a href="https://www.linkedin.com/in/GuiBDBello" target="_blank">LinkedIn</a>
         <a href="https://twitter.com/GuiBDBello" target="_blank">Twitter</a>
     </footer>
+
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- at the end of the body -->
+    <script type="text/javascript" src="./dist/vanilla-tilt.min.js"></script>
 </body>
 </html>
