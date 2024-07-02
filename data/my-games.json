@@ -1,5 +1,32 @@
-let myGames = {
+{
     "games": [
+        {
+            "p_windows": true,
+            "p_osx": false,
+            "p_linux": true,
+            "id": 396366,
+            "can_be_bought": false,
+            "title": "Alura - Apocalipse Zumbi",
+            "published": true,
+            "created_at": "2019-03-26 01:50:47",
+            "in_press_system": false,
+            "user": {
+                "cover_url": "https:\/\/img.itch.zone\/aW1nLzE2NzcxNjY2LmpwZw==\/100x100%23\/QKjKfy.jpg",
+                "display_name": "GuiBDBello",
+                "id": 1304622,
+                "username": "GuiBDBello",
+                "url": "https:\/\/guibdbello.itch.io"
+            },
+            "has_demo": false,
+            "type": "default",
+            "min_price": 0,
+            "url": "https:\/\/guibdbello.itch.io\/alura-apocalipse-zumbi",
+            "downloads_count": 3,
+            "views_count": 3,
+            "p_android": false,
+            "classification": "game",
+            "purchases_count": 0
+        },
         {
             "p_windows": true,
             "p_osx": true,
@@ -379,64 +406,3 @@ let myGames = {
         }
     ]
 }
-
-let i = 0;
-myGames.games.sort((theyest, thou) => {
-    if (theyest.created_at > thou.created_at)
-        return -1;
-    else if (theyest.created_at < thou.created_at)
-        return 1;
-    else
-        return 0;
-}).forEach(game => {
-    // Create Elements
-    let section = document.getElementById('game-jam-section');
-
-    let divGame = document.createElement('div');
-
-    let divDescription = document.createElement('div');
-    let aName = document.createElement('a');
-    let pDescription = document.createElement('p');
-
-    let divImage = document.createElement('div');
-    let aImg = document.createElement('a');
-    let img = document.createElement('img');
-
-    // Add Classes
-    divGame.classList.add('game');
-    divDescription.classList.add('game-description');
-    divImage.classList.add('game-image');
-
-    // Add Animation
-    divGame.setAttribute("data-aos", "zoom-in-up");
-    divGame.setAttribute("data-aos-anchor-placement", "center-bottom");
-
-    // Add Content
-    aName.href = game.url;
-    aName.target = '_blank';
-    aName.textContent = game.title;
-    pDescription.textContent = game.short_text;
-
-    aImg.href = game.url;
-    aImg.target = '_blank';
-    img.src = game.cover_url;
-
-    // Add Tilt
-    img.setAttributeNode(document.createAttribute("data-tilt"));
-    img.setAttribute("data-tilt-reverse", "true");
-    img.setAttribute("data-tilt-scale", "1.1");
-
-    // Append Childs
-    aImg.appendChild(img);
-
-    divDescription.appendChild(aName);
-    divDescription.appendChild(pDescription);
-    divImage.appendChild(aImg);
-
-    divGame.appendChild(divDescription);
-    divGame.appendChild(divImage);
-
-    section.appendChild(divGame);
-
-    i++;
-});
