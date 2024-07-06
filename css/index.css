@@ -132,8 +132,8 @@ div > h2 p {
 }
 
 img {
-    width: 480px;
-    height: 381px;
+    width: 500px;
+    height: 380px;
     border: 2px solid var(--secondary-color);
     border-radius: 5px;
     box-sizing: border-box;
