@@ -1,76 +1,76 @@
 let myGames = {
     "games": [
         {
+            "p_android": false,
+            "published": true,
+            "can_be_bought": false,
+            "embed": {
+                "fullscreen": false,
+                "width": 1152,
+                "height": 648
+            },
             "p_windows": false,
             "p_osx": false,
             "p_linux": false,
-            "can_be_bought": false,
-            "type": "html",
-            "still_cover_url": "https:\/\/img.itch.zone\/aW1nLzE2NzU3NDM0LmdpZg==\/315x250%23cm\/jc1wRs.gif",
-            "embed": {
-                "width": 1152,
-                "height": 648,
-                "fullscreen": false
-            },
-            "views_count": 19,
-            "created_at": "2024-05-07 01:12:00",
-            "classification": "game",
-            "cover_url": "https:\/\/img.itch.zone\/aW1nLzE2NzU3NDM0LmdpZg==\/315x250%23c\/mNmScz.gif",
-            "url": "https:\/\/guibdbello.itch.io\/godot-maze-generator",
-            "purchases_count": 0,
-            "user": {
-                "id": 1304622,
-                "display_name": "GuiBDBello",
-                "cover_url": "https:\/\/img.itch.zone\/aW1nLzE2NzcxNjY2LmpwZw==\/100x100%23\/QKjKfy.jpg",
-                "url": "https:\/\/guibdbello.itch.io",
-                "username": "GuiBDBello"
-            },
-            "p_android": false,
             "short_text": "3D maze generation powered by Godot.",
-            "published": true,
-            "id": 2692675,
-            "published_at": "2024-05-08 11:28:14",
             "min_price": 0,
-            "title": "Godot Maze Generator",
+            "still_cover_url": "https:\/\/img.itch.zone\/aW1nLzE2NzU3NDM0LmdpZg==\/315x250%23cm\/jc1wRs.gif",
+            "id": 2692675,
+            "created_at": "2024-05-07 01:12:00",
+            "user": {
+                "display_name": "GuiBDBello",
+                "url": "https:\/\/guibdbello.itch.io",
+                "username": "GuiBDBello",
+                "id": 1304622,
+                "cover_url": "https:\/\/img.itch.zone\/aW1nLzE2NzcxNjY2LmpwZw==\/100x100%23\/QKjKfy.jpg"
+            },
+            "url": "https:\/\/guibdbello.itch.io\/godot-maze-generator",
+            "published_at": "2024-05-08 11:28:14",
+            "type": "html",
+            "cover_url": "https:\/\/img.itch.zone\/aW1nLzE2NzU3NDM0LmdpZg==\/315x250%23c\/mNmScz.gif",
+            "views_count": 20,
             "has_demo": false,
+            "purchases_count": 0,
+            "classification": "game",
             "in_press_system": false,
-            "downloads_count": 0
+            "downloads_count": 0,
+            "title": "Godot Maze Generator"
         },
         {
+            "p_android": false,
+            "published": true,
+            "can_be_bought": false,
+            "embed": {
+                "fullscreen": false,
+                "width": 1152,
+                "height": 648
+            },
             "p_windows": false,
             "p_osx": false,
             "p_linux": false,
-            "can_be_bought": false,
-            "type": "html",
-            "still_cover_url": "https:\/\/img.itch.zone\/aW1nLzE2ODM3OTM4LmdpZg==\/315x250%23cm\/qNbeqW.gif",
-            "embed": {
-                "width": 1152,
-                "height": 648,
-                "fullscreen": false
-            },
-            "views_count": 12,
-            "created_at": "2024-07-03 22:02:04",
-            "classification": "game",
-            "cover_url": "https:\/\/img.itch.zone\/aW1nLzE2ODM3OTM4LmdpZg==\/315x250%23c\/n2wBIe.gif",
-            "url": "https:\/\/guibdbello.itch.io\/labiralg",
-            "purchases_count": 0,
-            "user": {
-                "id": 1304622,
-                "display_name": "GuiBDBello",
-                "cover_url": "https:\/\/img.itch.zone\/aW1nLzE2NzcxNjY2LmpwZw==\/100x100%23\/QKjKfy.jpg",
-                "url": "https:\/\/guibdbello.itch.io",
-                "username": "GuiBDBello"
-            },
-            "p_android": false,
             "short_text": "Procedurally generated maze game.",
-            "published": true,
-            "id": 2811761,
-            "published_at": "2024-07-05 11:45:32",
             "min_price": 0,
-            "title": "Labiralg",
+            "still_cover_url": "https:\/\/img.itch.zone\/aW1nLzE2ODM3OTM4LmdpZg==\/315x250%23cm\/qNbeqW.gif",
+            "id": 2811761,
+            "created_at": "2024-07-03 22:02:04",
+            "user": {
+                "display_name": "GuiBDBello",
+                "url": "https:\/\/guibdbello.itch.io",
+                "username": "GuiBDBello",
+                "id": 1304622,
+                "cover_url": "https:\/\/img.itch.zone\/aW1nLzE2NzcxNjY2LmpwZw==\/100x100%23\/QKjKfy.jpg"
+            },
+            "url": "https:\/\/guibdbello.itch.io\/labiralg",
+            "published_at": "2024-07-05 11:45:32",
+            "type": "html",
+            "cover_url": "https:\/\/img.itch.zone\/aW1nLzE2ODM3OTM4LmdpZg==\/315x250%23c\/n2wBIe.gif",
+            "views_count": 14,
             "has_demo": false,
+            "purchases_count": 0,
+            "classification": "game",
             "in_press_system": false,
-            "downloads_count": 0
+            "downloads_count": 0,
+            "title": "Labiralg"
         }
     ]
 }
